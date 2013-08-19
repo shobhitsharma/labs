@@ -1,3 +1,7 @@
 # labs
 
 ## Contents
+
+### Notes
+
+### Scripts
