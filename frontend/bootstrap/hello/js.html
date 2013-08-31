@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="bootstrap">
+    <meta name="author" content="bin3">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>Hello Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/css/docs.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="hello.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <h1>Modal</h1>
+      <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+              <h4 id="myModalLabel" class="modal-title">Modal Heading</h4>
+            </div>
+            <div class="modal-body">
+              <h4>Text in a modal</h4>
+              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+            </div>
+            <div class="modal-footer">
+              <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
+              <button class="btn btn-primary" type="button">Save changes</button>
+            </div>
+
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div>
+      <div style="padding-bottom: 24px;" class="bs-example">
+        <a class="btn btn-primary btn-lg" href="#myModal" data-toggle="modal">Launch demo modal</a>
+      </div>
+
+      <h1>Tab</h1>
+      <div class="bs-example bs-example-tabs">
+        <ul class="nav nav-tabs" id="myTab">
+          <li class=""><a data-toggle="tab" href="#home">Home</a></li>
+          <li class="active"><a data-toggle="tab" href="#profile">Profile</a></li>
+          <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" id="myTabDrop1" href="#">Dropdown <b class="caret"></b></a>
+            <ul aria-labelledby="myTabDrop1" role="menu" class="dropdown-menu">
+              <li><a data-toggle="tab" tabindex="-1" href="#dropdown1">@fat</a></li>
+              <li><a data-toggle="tab" tabindex="-1" href="#dropdown2">@mdo</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div id="home" class="tab-pane fade">
+            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+          </div>
+          <div id="profile" class="tab-pane fade active in">
+            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+          </div>
+          <div id="dropdown1" class="tab-pane fade">
+            <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+          </div>
+          <div id="dropdown2" class="tab-pane fade">
+            <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+          </div>
+        </div>
+      </div>
+
+      <h1>Tooltip(not work)</h1>
+      <div class="bs-example tooltip-demo">
+        <p style="margin-bottom: 0;" class="muted">Tight pants next level keffiyeh <a title="" data-toggle="tooltip" href="#" data-original-title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a title="Another tooltip" data-toggle="tooltip" href="#">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a title="Another one here too" data-toggle="tooltip" href="#">whatever keytar</a>, scenester farm-to-table banksy Austin <a title="The last tip!" data-toggle="tooltip" href="#">twitter handle</a> freegan cred raw denim single-origin coffee viral.
+        </p>
+      </div>
+      <div class="bs-example tooltip-demo">
+        <div class="bs-example-tooltips">
+          <button title="Tooltip on left" data-placement="left" data-toggle="tooltip" class="btn btn-default" type="button">Tooltip on left</button>
+          <button title="Tooltip on top" data-placement="top" data-toggle="tooltip" class="btn btn-default" type="button">Tooltip on top</button>
+          <button title="Tooltip on bottom" data-placement="bottom" data-toggle="tooltip" class="btn btn-default" type="button">Tooltip on bottom</button>
+          <button title="Tooltip on right" data-placement="right" data-toggle="tooltip" class="btn btn-default" type="button">Tooltip on right</button>
+        </div>
+      </div>
+
+      <h1>Popover</h1>
+      <div style="padding-bottom: 24px;" class="bs-example">
+        <a data-content="And here's some amazing content. It's very engaging. right?" title="" data-toggle="popover" class="btn btn-lg btn-danger" href="#" data-original-title="A Title">Click to toggle popover</a>
+      </div>
+
+      <footer>
+        <p>&copy; bin3 2013</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    
+    <script>
+    $("a[data-toggle=popover]")
+    .popover()
+    .click(function(e) {
+      e.preventDefault()
+    })
+    </script>
+
+  </body>
+</html>

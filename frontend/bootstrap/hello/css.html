@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="bootstrap css">
+    <meta name="author" content="bin3">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>Bootstrap CSS Examples</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/css/docs.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="hello.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h1>Grid system</h1>
+      <div class="bs-example show-grid">
+        <div class="row">
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">.col-md-8</div>
+          <div class="col-md-4">.col-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4">.col-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">.col-md-6</div>
+          <div class="col-md-6">.col-md-6</div>
+        </div>
+
+        <h2>Offsetting columns</h2>
+        <div class="row">
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+          <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+        </div>
+      </div>
+
+      <h1>Typography</h1>
+      <div class="bs-example">
+        <p class="lead">This is a lead paragraph</p>
+        <h3>Emphasis</h3>
+        <small>This line of text is meant to be treated as fine print.</small>
+        <strong>rendered as bold text</strong>
+        <em>rendered as italicized text</em>
+        <p class="text-left">Left aligned text.</p>
+        <p class="text-center">Center aligned text.</p>
+        <p class="text-right">Right aligned text.</p>
+        <p class="text-muted">.text-muted</p>
+        <p class="text-primary">.text-primary</p>
+        <p class="text-success">.text-success</p>
+        <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+        <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread.</p>
+        <address>
+          <strong>Twitter, Inc.</strong><br>
+          795 Folsom Ave, Suite 600<br>
+          San Francisco, CA 94107<br>
+          <abbr title="Phone">P:</abbr> (123) 456-7890
+        </address>
+
+        <address>
+          <strong>Full Name</strong><br>
+          <a href="mailto:#">first.last@example.com</a>
+        </address>
+        <div class="bs-example">
+          <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+          </blockquote>
+        </div>
+        <div class="bs-example" style="overflow: hidden;">
+          <blockquote class="pull-right">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          </blockquote>
+        </div>
+        <div class="bs-example">
+          <ul class="list-inline">
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+          </ul>
+        </div>
+        <div class="bs-example">
+          <dl>
+            <dt>Description lists</dt>
+            <dd>A description list is perfect for defining terms.</dd>
+            <dt>Euismod</dt>
+            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+            <dt>Malesuada porta</dt>
+            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+          </dl>
+        </div>
+        <div class="bs-example">
+          <dl class="dl-horizontal">
+            <dt>Description lists</dt>
+            <dd>A description list is perfect for defining terms.</dd>
+            <dt>Euismod</dt>
+            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+            <dt>Malesuada porta</dt>
+            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <h1>Code</h1>
+      <div class="bs-example">
+        For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+        <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+      </div>
+
+      <h1>Tables</h1>
+      <div class="bs-example">
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered table-hover">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+              <tr class="success">
+                <td>4</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <h1>Forms</h1>
+      <form role="form" class="bs-example">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" placeholder="Enter email" id="exampleInputEmail1" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" placeholder="Password" id="exampleInputPassword1" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputFile">File input</label>
+          <input type="file" id="exampleInputFile">
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Check me out
+          </label>
+        </div>
+        <button class="btn btn-default" type="submit">Submit</button>
+      </form>
+      <form role="form" class="bs-example form-inline">
+        <div class="form-group">
+          <label for="exampleInputEmail2" class="sr-only">Email address</label>
+          <input type="email" placeholder="Enter email" id="exampleInputEmail2" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword2" class="sr-only">Password</label>
+          <input type="password" placeholder="Password" id="exampleInputPassword2" class="form-control">
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-default" type="submit">Sign in</button>
+      </form>
+      <form class="bs-example">
+        <input type="text" placeholder="Text input" class="form-control">
+        <textarea class="form-control" rows="3"></textarea>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            Option one is this and that&mdash;be sure to include why it's great
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            Option one is this and that&mdash;be sure to include why it's great
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            Option two can be something else and selecting it will deselect option one
+          </label>
+        </div>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+        </label>
+        <select class="form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+
+        <select multiple class="form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+
+        <div class="form-group has-success">
+          <label class="control-label" for="inputSuccess">Input with success</label>
+          <input type="text" class="form-control" id="inputSuccess">
+        </div>
+        <div class="form-group has-warning">
+          <label class="control-label" for="inputWarning">Input with warning</label>
+          <input type="text" class="form-control" id="inputWarning">
+        </div>
+        <div class="form-group has-error">
+          <label class="control-label" for="inputError">Input with error</label>
+          <input type="text" class="form-control" id="inputError">
+        </div>
+
+      </form>
+
+      <h1>Buttons</h1>
+      <div class="bs-example">
+        <button class="btn btn-default" type="button">Default</button>
+        <button class="btn btn-primary" type="button">Primary</button>
+        <button class="btn btn-success" type="button">Success</button>
+        <button class="btn btn-info" type="button">Info</button>
+        <button class="btn btn-warning" type="button">Warning</button>
+        <button class="btn btn-danger" type="button">Danger</button>
+        <button class="btn btn-link" type="button">Link</button>
+
+        <p>
+          <button type="button" class="btn btn-primary btn-lg">Large button</button>
+          <button type="button" class="btn btn-default btn-lg">Large button</button>
+        </p>
+        <p>
+          <button type="button" class="btn btn-primary">Default button</button>
+          <button type="button" class="btn btn-default">Default button</button>
+        </p>
+        <p>
+          <button type="button" class="btn btn-primary btn-sm">Small button</button>
+          <button type="button" class="btn btn-default btn-sm">Small button</button>
+        </p>
+        <p>
+          <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+          <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+        </p>
+
+        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+
+        <button type="button" class="btn btn-lg btn-primary" disabled="disabled">Primary button</button>
+        <button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
+
+        <a href="#" class="btn btn-primary btn-lg disabled">Primary link</a>
+        <a href="#" class="btn btn-default btn-lg disabled">Link</a>
+      </div>
+
+      <h1>Images</h1>
+      <div class="bs-example bs-example-images">
+        <img alt="140x140" class="img-rounded" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAAEdklEQVR4nO3YYYuiahyG8fP9P8ofRJAgIgghIoKQiBCJEBEJEfEr3OdF7UztTnvOzYGzM7vXix+D+ZiOc+HjM39N0yTg3/rrV18AvhaCgYVgYCEYWAgGFoKBhWBgIRhYCAYWgoGFYGAhGFgIBhaCgYVgYCEYWAgGFoKBhWBgIRhYCAYWgoGFYGAhGFgIBhaCgYVgYCEYWAgGFoKBhWBgIRhYCAYWgoGFYGAhGFgIBhaCgYVgYCEYWAgGFoKBhWBgIRhYCAYWgoGFYGAhGFgIBhaCgYVgYCEYWAgGFoKBhWBgIRhYCAYWgoGFYGAhGFgIBhaCgYVgYCEYWL5+MP1F68VCy3yv7ifjTutc5fW+PbbaLjJFhCJdquzGfzxPV+00ny+0OdSvx4211nmh4b7d1wfNk1BEaLYqdP3V94pgJo3dWfvtShGpyv7jMf15+7B/0G4WijTXuW10XM8UMdN5+Pl5LsdC21WqNC9fjjnliSJZ38LoS6URmm9PattKqyQUi4PGT3DP/uhgpmnSNJ6VvgpmvGgeoYhMVT9p6g6KSFW9BTJql4XmRa3L6aCq6d+Obcrj0/Z4XitdfRxMX23uT6yN+mlSvZspZvv3QPpSaSQ6dp/gfv3xwQzVi2BGFYtQJMlbMH2VK9Ld27QxTZO641LJqlRTLBQx02WcNF62iggVzfAQRf5xMMNZswhl8/QtmCrPtDi0D+MGbdPQqrz++vtFMB8H0x6Xipjr0lXK7vv7aq3su2nlPYR7YLOl5hFaFM2LcY/nGbSfhWJ51PWyVcRa/TRol4Xy6jmOKs8I5lP4KJjrSUmENudB03RWcp+G+urHaeXps29T2Gz/9BR6FcztqbRQPd2mrFswk07LVHnVP409rVKC+RR+CKbTOr2tTiKS+8/be8ypfP+jfju+3mZK7k+da7l5H3t9Ps/3wYzt4eG7H6QbnfJUs93jiuqqPELr7yL6an7TYAa1da26aVTXjZpzoTQS7atGw3hRFqFdfX83GWvNI7Q+95qGSlmE1lWran17H3lcCv8QzNCprms1Ta2maVXtF4pY6txedS1zRazUfjv2vFHEXPX4Ce7XHx9MXyoidHqxrJ6G2/7yvjKqi4UiQot8pSxCsSg0TL226e1d5HZcq1WEknX1Hky5UixPL69jqHJF5Pen11XbLBQxU76aKyKUn9r/9nt+Ar9HMNOgpm6epplnvZqme/ofSHc5ab/f63C63D4fe9WX+vk7+lZ18/7OMfad2m54fR1Dp/rpPL2qY6GiKJ6W51/ZbxIM/i8EAwvBwEIwsBAMLAQDC8HAQjCwEAwsBAMLwcBCMLAQDCwEAwvBwEIwsBAMLAQDC8HAQjCwEAwsBAMLwcBCMLAQDCwEAwvBwEIwsBAMLAQDC8HAQjCwEAwsBAMLwcBCMLAQDCwEAwvBwEIwsBAMLAQDC8HAQjCwEAwsBAMLwcBCMLAQDCwEAwvBwEIwsBAMLAQDC8HAQjCwEAwsBAMLwcBCMLAQDCwEAwvBwEIwsBAMLH8DxcRv9e6DuB0AAAAASUVORK5CYII=" data-src="holder.js/140x140" style="width: 140px; height: 140px;">
+        <img alt="140x140" class="img-circle" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAAEdklEQVR4nO3YYYuiahyG8fP9P8ofRJAgIgghIoKQiBCJEBEJEfEr3OdF7UztTnvOzYGzM7vXix+D+ZiOc+HjM39N0yTg3/rrV18AvhaCgYVgYCEYWAgGFoKBhWBgIRhYCAYWgoGFYGAhGFgIBhaCgYVgYCEYWAgGFoKBhWBgIRhYCAYWgoGFYGAhGFgIBhaCgYVgYCEYWAgGFoKBhWBgIRhYCAYWgoGFYGAhGFgIBhaCgYVgYCEYWAgGFoKBhWBgIRhYCAYWgoGFYGAhGFgIBhaCgYVgYCEYWAgGFoKBhWBgIRhYCAYWgoGFYGAhGFgIBhaCgYVgYCEYWL5+MP1F68VCy3yv7ifjTutc5fW+PbbaLjJFhCJdquzGfzxPV+00ny+0OdSvx4211nmh4b7d1wfNk1BEaLYqdP3V94pgJo3dWfvtShGpyv7jMf15+7B/0G4WijTXuW10XM8UMdN5+Pl5LsdC21WqNC9fjjnliSJZ38LoS6URmm9PattKqyQUi4PGT3DP/uhgpmnSNJ6VvgpmvGgeoYhMVT9p6g6KSFW9BTJql4XmRa3L6aCq6d+Obcrj0/Z4XitdfRxMX23uT6yN+mlSvZspZvv3QPpSaSQ6dp/gfv3xwQzVi2BGFYtQJMlbMH2VK9Ld27QxTZO641LJqlRTLBQx02WcNF62iggVzfAQRf5xMMNZswhl8/QtmCrPtDi0D+MGbdPQqrz++vtFMB8H0x6Xipjr0lXK7vv7aq3su2nlPYR7YLOl5hFaFM2LcY/nGbSfhWJ51PWyVcRa/TRol4Xy6jmOKs8I5lP4KJjrSUmENudB03RWcp+G+urHaeXps29T2Gz/9BR6FcztqbRQPd2mrFswk07LVHnVP409rVKC+RR+CKbTOr2tTiKS+8/be8ypfP+jfju+3mZK7k+da7l5H3t9Ps/3wYzt4eG7H6QbnfJUs93jiuqqPELr7yL6an7TYAa1da26aVTXjZpzoTQS7atGw3hRFqFdfX83GWvNI7Q+95qGSlmE1lWran17H3lcCv8QzNCprms1Ta2maVXtF4pY6txedS1zRazUfjv2vFHEXPX4Ce7XHx9MXyoidHqxrJ6G2/7yvjKqi4UiQot8pSxCsSg0TL226e1d5HZcq1WEknX1Hky5UixPL69jqHJF5Pen11XbLBQxU76aKyKUn9r/9nt+Ar9HMNOgpm6epplnvZqme/ofSHc5ab/f63C63D4fe9WX+vk7+lZ18/7OMfad2m54fR1Dp/rpPL2qY6GiKJ6W51/ZbxIM/i8EAwvBwEIwsBAMLAQDC8HAQjCwEAwsBAMLwcBCMLAQDCwEAwvBwEIwsBAMLAQDC8HAQjCwEAwsBAMLwcBCMLAQDCwEAwvBwEIwsBAMLAQDC8HAQjCwEAwsBAMLwcBCMLAQDCwEAwvBwEIwsBAMLAQDC8HAQjCwEAwsBAMLwcBCMLAQDCwEAwvBwEIwsBAMLAQDC8HAQjCwEAwsBAMLwcBCMLAQDCwEAwvBwEIwsBAMLH8DxcRv9e6DuB0AAAAASUVORK5CYII=" data-src="holder.js/140x140" style="width: 140px; height: 140px;">
+        <img alt="140x140" class="img-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAAEdklEQVR4nO3YYYuiahyG8fP9P8ofRJAgIgghIoKQiBCJEBEJEfEr3OdF7UztTnvOzYGzM7vXix+D+ZiOc+HjM39N0yTg3/rrV18AvhaCgYVgYCEYWAgGFoKBhWBgIRhYCAYWgoGFYGAhGFgIBhaCgYVgYCEYWAgGFoKBhWBgIRhYCAYWgoGFYGAhGFgIBhaCgYVgYCEYWAgGFoKBhWBgIRhYCAYWgoGFYGAhGFgIBhaCgYVgYCEYWAgGFoKBhWBgIRhYCAYWgoGFYGAhGFgIBhaCgYVgYCEYWAgGFoKBhWBgIRhYCAYWgoGFYGAhGFgIBhaCgYVgYCEYWL5+MP1F68VCy3yv7ifjTutc5fW+PbbaLjJFhCJdquzGfzxPV+00ny+0OdSvx4211nmh4b7d1wfNk1BEaLYqdP3V94pgJo3dWfvtShGpyv7jMf15+7B/0G4WijTXuW10XM8UMdN5+Pl5LsdC21WqNC9fjjnliSJZ38LoS6URmm9PattKqyQUi4PGT3DP/uhgpmnSNJ6VvgpmvGgeoYhMVT9p6g6KSFW9BTJql4XmRa3L6aCq6d+Obcrj0/Z4XitdfRxMX23uT6yN+mlSvZspZvv3QPpSaSQ6dp/gfv3xwQzVi2BGFYtQJMlbMH2VK9Ld27QxTZO641LJqlRTLBQx02WcNF62iggVzfAQRf5xMMNZswhl8/QtmCrPtDi0D+MGbdPQqrz++vtFMB8H0x6Xipjr0lXK7vv7aq3su2nlPYR7YLOl5hFaFM2LcY/nGbSfhWJ51PWyVcRa/TRol4Xy6jmOKs8I5lP4KJjrSUmENudB03RWcp+G+urHaeXps29T2Gz/9BR6FcztqbRQPd2mrFswk07LVHnVP409rVKC+RR+CKbTOr2tTiKS+8/be8ypfP+jfju+3mZK7k+da7l5H3t9Ps/3wYzt4eG7H6QbnfJUs93jiuqqPELr7yL6an7TYAa1da26aVTXjZpzoTQS7atGw3hRFqFdfX83GWvNI7Q+95qGSlmE1lWran17H3lcCv8QzNCprms1Ta2maVXtF4pY6txedS1zRazUfjv2vFHEXPX4Ce7XHx9MXyoidHqxrJ6G2/7yvjKqi4UiQot8pSxCsSg0TL226e1d5HZcq1WEknX1Hky5UixPL69jqHJF5Pen11XbLBQxU76aKyKUn9r/9nt+Ar9HMNOgpm6epplnvZqme/ofSHc5ab/f63C63D4fe9WX+vk7+lZ18/7OMfad2m54fR1Dp/rpPL2qY6GiKJ6W51/ZbxIM/i8EAwvBwEIwsBAMLAQDC8HAQjCwEAwsBAMLwcBCMLAQDCwEAwvBwEIwsBAMLAQDC8HAQjCwEAwsBAMLwcBCMLAQDCwEAwvBwEIwsBAMLAQDC8HAQjCwEAwsBAMLwcBCMLAQDCwEAwvBwEIwsBAMLAQDC8HAQjCwEAwsBAMLwcBCMLAQDCwEAwvBwEIwsBAMLAQDC8HAQjCwEAwsBAMLwcBCMLAQDCwEAwvBwEIwsBAMLH8DxcRv9e6DuB0AAAAASUVORK5CYII=" data-src="holder.js/140x140" style="width: 140px; height: 140px;">
+      </div>
+
+      <footer>
+        <p>&copy; bin3 2013</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
