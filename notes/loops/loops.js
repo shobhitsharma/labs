@@ -1,9 +1,7 @@
 /**
- * Created with JetBrains WebStorm.
  * User: Shobhit Sharma <contact@shobhitsharma.com>
  * Date: 8/14/13
  * Time: 10:06 PM
- * To change this template use File | Settings | File Templates.
  */
 (function () {
   "use strict";
