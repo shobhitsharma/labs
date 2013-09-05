@@ -1,5 +1,3 @@
-```js
-
 // Single line comment
 /* Multi-
    line comment */
@@ -265,5 +263,3 @@ func (p pair) ServeHTTP(w http.ResponseWriter, r *http.Request) {
     // Serve data with a method of http.ResponseWriter
     w.Write([]byte("You learned Go in Y minutes!"))
 }
-
-```
