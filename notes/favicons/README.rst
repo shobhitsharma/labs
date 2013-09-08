@@ -1,10 +1,8 @@
 favicon-cheat-sheet
 ===================
 
-A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
-
-* http://mathiasbynens.be/notes/rel-shortcut-icon <-- special thanks `@mathiasbynens`_
-* http://mathiasbynens.be/notes/touch-icons <-- special thanks `@mathiasbynens`_
+* http://mathiasbynens.be/notes/rel-shortcut-icon
+* http://mathiasbynens.be/notes/touch-icons
 * http://www.jonathantneal.com/blog/understand-the-favicon/
 * https://en.wikipedia.org/wiki/Favicon.ico
 * http://snook.ca/archives/design/making_a_good_favicon
