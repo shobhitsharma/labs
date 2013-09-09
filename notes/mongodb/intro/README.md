@@ -1,3 +1,5 @@
+##Introduction to MongoDB
+
 Mongo DB has rapidly grown to become a popular database for web applications and is a perfect fit for Node.JS applications, letting you write Javascript for the client, backend and database layer. It’s schemaless nature is a better match to our constantly evolving data structures in web applications and the integrated support for location queries a bonus that it’s hard to ignore. Throw Replicasets for scaling and we are looking at really nice platform to grow your storage needs now and in the future.
 
 Now to shamelessly plug my driver. It can be downloaded either using npm or fetched from the github repository. To install via npm do the following.
@@ -117,8 +119,9 @@ A couple of variations on the theme of inserting a document as we can see. To un
 Mongo DB has asynchronous insert/update/remove operations. This means that when you issue an insert operation its a fire and forget operation where the database does not reply with the status of the insert operation. To retrieve the status of the operation you have to issue a query to retrieve the last error status of the connection. To make it simpler to the developer the driver implements the {safe:true} options so that this is done automatically when inserting the document. {safe:true} becomes especially important when you do update or remove as otherwise it’s not possible to determine the amount of documents modified or removed.
 
 Now let’s go through the different types of inserts shown in the code above.
-
+```
 collection.insert(doc1);
+```
 
 Taking advantage of the async behavior and not needing confirmation about the persisting of the data to Mongo DB we just fire off the insert (we are doing live analytics, loosing a couple of records does not matter).
 
@@ -199,14 +202,18 @@ db.open(function(err, db) {
 ```
 
 Let’s examine the 3 remove variants and what they do.
-
+```
 collection.remove({mykey:1});
+```
 This leverages the fact that Mongo DB is asynchronous and that it does not return a result for insert/update/remove to allow for synchronous style execution. This particular remove query will remove the document where mykey equals 1.
-
+```
 collection.remove({mykey:2}, {safe:true}, function(err, result) {});
+```
 This remove statement removes the document where mykey equals 2 but since we are using {safe:true} it will back to Mongo DB to get the status of the remove operation and return the number of documents removed in the result variable.
-
+```
 collection.remove();
+```
+
 This last one will remove all documents in the collection.
 
 Time to Query
@@ -240,11 +247,15 @@ Before we start picking apart the code there is one thing that needs to be under
 
 collection.find().toArray(function(err, items) {});
 This query will fetch all the document in the collection and return them as an array of items. Be careful with the function toArray as it might cause a lot of memory usage as it will instantiate all the document into memory before returning the final array of items. If you have a big resultset you could run into memory issues.
-
+```
 var stream = collection.find({mykey:{$ne:2}}).streamRecords();
 stream.on("data", function(item) {});
 stream.on("end", function() {});
-This is the preferred way if you have to retrieve a lot of data for streaming, as data is deserialized a data event is emitted. This keeps the resident memory usage low as the documents are streamed to you. Very useful if you are pushing documents out via websockets or some other streaming socket protocol. Once there is no more document the driver will emit the end event to notify the application that it’s done.
+```
 
+This is the preferred way if you have to retrieve a lot of data for streaming, as data is deserialized a data event is emitted. This keeps the resident memory usage low as the documents are streamed to you. Very useful if you are pushing documents out via websockets or some other streaming socket protocol. Once there is no more document the driver will emit the end event to notify the application that it’s done.
+```
 collection.findOne({mykey:1}, function(err, item) {});
+```
+
 This is special supported function to retrieve just one specific document bypassing the need for a cursor object.
