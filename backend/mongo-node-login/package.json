@@ -1,0 +1,26 @@
+{
+  "name": "login-node-mongodb",
+  "version": "0.0.0",
+  "description": "Login using Node ================",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/braitsch/node-login.git"
+  },
+  "author": "Shobhit Sharma",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "3.0.6",
+    "stylus": "0.31.0",
+    "jade": "0.27.7",
+    "mongodb": "1.2.7",
+    "moment" : "1.7.2",
+    "emailjs": "0.3.3"
+  },
+  "bugs": {
+    "url": "https://github.com/braitsch/node-login/issues"
+  }
+}
