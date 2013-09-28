@@ -1,0 +1,64 @@
+<html xmlns:ng="http://angularjs.org" ng-app lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css" rel="stylesheet">
+  <script src="http://code.angularjs.org/1.1.0/angular.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+  var sortingOrder = 'name';
+</script>
+</div>
+<div ng-controller="ctrlRead">
+  <div class="input-append">
+    <input type="text" ng-model="query" ng-change="search()" class="input-large search-query" placeholder="Search">
+    <span class="add-on"><i class="icon-search"></i></span>
+  </div>
+  <table class="table table-striped table-condensed table-hover">
+    <thead>
+    <tr>
+      <th class="id">Id&nbsp;<a ng-click="sort_by('id')"><i class="icon-sort"></i></a></th>
+      <th class="name">Name&nbsp;<a ng-click="sort_by('name')"><i class="icon-sort"></i></a></th>
+      <th class="description">Description&nbsp;<a ng-click="sort_by('description')"><i class="icon-sort"></i></a></th>
+      <th class="field3">Field 3&nbsp;<a ng-click="sort_by('field3')"><i class="icon-sort"></i></a></th>
+      <th class="field4">Field 4&nbsp;<a ng-click="sort_by('field4')"><i class="icon-sort"></i></a></th>
+      <th class="field5">Field 5&nbsp;<a ng-click="sort_by('field5')"><i class="icon-sort"></i></a></th>
+    </tr>
+    </thead>
+    <tfoot>
+    <td colspan="6">
+      <div class="pagination pull-right">
+        <ul>
+          <li ng-class="{disabled: currentPage == 0}">
+            <a href ng-click="prevPage()">« Prev</a>
+          </li>
+          <li ng-repeat="n in range(pagedItems.length)"
+              ng-class="{active: n == currentPage}"
+              ng-click="setPage()">
+            <a href ng-bind="n + 1">1</a>
+          </li>
+          <li ng-class="{disabled: currentPage == pagedItems.length - 1}">
+            <a href ng-click="nextPage()">Next »</a>
+          </li>
+        </ul>
+      </div>
+    </td>
+    </tfoot>
+    <tbody>
+    <tr ng-repeat="item in pagedItems[currentPage] | orderBy:sortingOrder:reverse">
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.description}}</td>
+      <td>{{item.field3}}</td>
+      <td>{{item.field4}}</td>
+      <td>{{item.field5}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="pagination.js"></script>
+</body>
+</html>
