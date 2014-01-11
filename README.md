@@ -1,3 +1,3 @@
 # labs
 
-Repository for experiments in programming languages and learning materials
+Experiments in programming languages and learning materials
